@@ -66,6 +66,8 @@ const useGameState = (timeLimit) => {
   return { stars, availableNums, candidateNums, secondsLeft, setGameState };
 };
 
+// const saveScores =  localStorage.setItem("cartItems", JSON.stringify(getState().cart.cartItems));
+
 const Game = (props) => {
   const { stars, availableNums, candidateNums, secondsLeft, setGameState } =
     useGameState();
